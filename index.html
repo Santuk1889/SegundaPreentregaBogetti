@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Jugadores - Liga X</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a class="navbar-brand" href="index.html">
+            <img
+              class="imagen-zoom"
+              src="images/logo.png"
+              alt="Logo de la Liga X"
+            />
+          </a>
+    </header>
+
+    <h1>Gestor de Jugadores Liga X</h1>
+
+    <div class="contenedor">
+
+        <!-- Izquierda - Formulario para Agregar Jugadores -->
+        <div class="formulario">
+            <input type="text" id="nombre" placeholder="Nombre del jugador">
+            <input type="number" id="edad" placeholder="Edad">
+            <select id="equipo">
+                <!-- Lista de equipos -->
+                <option value="Boca Juniors">Boca Juniors</option>
+                <option value="River Plate">River Plate</option>
+                <option value="Independiente">Independiente</option>
+                <option value="Racing Club">Racing Club</option>
+                <option value="San Lorenzo">San Lorenzo</option>
+                <option value="Rosario Central">Rosario Central</option>
+                <option value="Tiro Federal">Tiro Federal</option>
+                <option value="Vélez Sarsfield">Vélez SArsfield</option>
+                <option value="Estudiantes">Estudiantes</option>
+                <option value="Gimnasia">Gimnasia</option>
+            </select>
+            <select id="posicion">
+                <option value="Arquero">Arquero</option>
+                <option value="Defensor">Defensor</option>
+                <option value="Volante">Volante</option>
+                <option value="Delantero">Delantero</option>
+            </select>
+            <input type="file" id="avatar" accept="image/*">
+            <button id="agregarJugador">Agregar Jugador</button>
+        </div>
+        <!-- Derecha - Lista de Jugadores -->
+        
+        <div class="lista">
+            <div class="acciones">
+                <button id="guardar">Guardar Jugadores</button>
+                <button id="recuperar">Recuperar Jugadores</button>
+                <button id="borrar">Borrar Jugadores</button>
+                <button id="vaciar">Vaciar Lista</button>
+            </div>
+            <div class="filtros">
+                <select id="filtroEquipo">
+                    <option value="">Filtrar por equipo</option>
+                    <option value="Boca Juniors">Boca Juniors</option>
+                    <option value="River Plate">River Plate</option>
+                    <option value="Independiente">Independiente</option>
+                    <option value="Racing Club">Racing Club</option>
+                    <option value="San Lorenzo">San Lorenzo</option>
+                    <option value="Rosario Central">Rosario Central</option>
+                    <option value="Tiro Federal">Tiro Federal</option>
+                    <option value="Vélez Sarsfield">Vélez SArsfield</option>
+                    <option value="Estudiantes">Estudiantes</option>
+                    <option value="Gimnasia">Gimnasia</option>
+                </select>
+                <select id="filtroPosicion">
+                    <option value="">Filtrar por posición</option>
+                    <option value="Arquero">Arquero</option>
+                    <option value="Defensor">Defensor</option>
+                    <option value="Volante">Volante</option>
+                    <option value="Delantero">Delantero</option>
+                </select>
+                <button id="aplicarFiltros">Aplicar Filtros</button>
+            </div>
+            <div id="listaJugadores"></div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Liga X. Todos los derechos reservados.</p>
+        <div class="footer-redes">
+          <a href="https://facebook.com/" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.whatsapp.com/" target="_blank"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
